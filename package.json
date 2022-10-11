@@ -41,6 +41,7 @@
     "node": "^14.15.0 || >=16.0.0"
   },
   "dependencies": {
-    "aos": "^2.3.4"
+    "aos": "^2.3.4",
+    "tailwind-scrollbar-hide": "^1.1.7"
   }
 }
