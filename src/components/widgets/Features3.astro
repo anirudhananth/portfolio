@@ -1,37 +1,51 @@
 ---
 import { Icon } from 'astro-icon';
+import Picture from '~/components/core/Picture.astro';
 ---
 
-<section>
+<section id="projects">
 	<div class="max-w-6xl mx-auto px-4 sm:px-6 overflow-hidden">
 		<div class="py-12 md:py-20">
+		<h2 class="text-4xl md:text-5xl font-bold leading-tighter tracking-tighter mb-4 font-heading text-center">
+					Projects
+				</h2>
 			<div class="py-4 sm:py-6 lg:py-8">
 				<div class="flex flex-wrap md:-mx-8">
 					<div class="w-full lg:w-1/2 px-0 sm:px-8">
 						<div class="mb-12 lg:mb-0 pb-12 lg:pb-0 border-b lg:border-b-0">
-							<h2 class="mb-4 text-3xl lg:text-4xl font-bold font-heading">
-								Sed ac magna sit amet risus tristique interdum, at vel velit in hac habitasse platea dictumst.
+							<h2 class="mb-4 text-3xl lg:text-4xl font-bold font-heading" data-aos="fade-right">
+								Job Portal
 							</h2>
 
-							<p class="mb-8 text-xl text-gray-600 dark:text-slate-400">
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis, mi
-								risus tempus nulla, sed porttitor est nibh at nulla. Praesent placerat enim ut ex tincidunt vehicula.
-								Fusce sit amet dui tellus.
+							<p class="mb-8 text-xl text-gray-600 dark:text-slate-400" data-aos="fade-right" data-aos-delay="100">
+								A platform in the making for the purpose of recruitment. 
+								Potential candidates who wish to apply for jobs can use this portal. 
+								(The jobs displayed in the image are only for development purposes.)
 							</p>
 
-							<div class="w-full">
+							<div class="w-full" data-aos="fade-right" data-aos-delay="200">
 								<a
-									class="btn text-white bg-primary-600 hover:bg-primary-800 mb-4 sm:mb-0"
-									href="https://github.com/onwidget/astrowind"
+									class="btn text-white bg-[#c026d3] hover:bg-[#db2777] mb-4 sm:mb-0"
+									href="https://jobs.airecruiter.us/it-jobs/home"
 									target="_blank"
 									rel="noopener"
 								>
-									<Icon name="tabler:download" class="w-5 h-5 mr-1 -ml-1.5" /> Get template
+									<Icon name="tabler:arrow-up-right" class="w-5 h-5 mr-1 -ml-1.5" /> Visit Website
 								</a>
 							</div>
 						</div>
 					</div>
-					<div class="w-full lg:w-1/2 px-0 sm:px-8">
+					<div class="w-full lg:w-1/2 px-0 sm:px-8" data-aos="fade-left">
+						<Picture
+							src={import('~/assets/images/portal.jpg')}
+							class="mx-auto rounded-md shadow-lg bg-gray-400 dark:bg-slate-700 w-full"
+							widths={[400, 768]}
+							sizes=" (max-width: 767px) 400px, 768px"
+							alt="Hero Image"
+							aspectRatio="16:9"
+						/>
+					</div>
+					<div class="w-full lg:w-1/2 px-0 sm:px-8" style="display: none">
 						<ul class="space-y-12">
 							<li class="flex md:-mx-4">
 								<div class="pr-4 sm:pl-4">
@@ -82,6 +96,80 @@ import { Icon } from 'astro-icon';
 								</div>
 							</li>
 						</ul>
+					</div>
+				</div>
+				<br><br><br>
+				<div class="flex flex-wrap md:-mx-8">
+					<div class="w-full lg:w-1/2 px-0 sm:px-8" data-aos="fade-right">
+						<Picture
+							src={import('~/assets/images/switch.png')}
+							class="mx-auto rounded-md shadow-lg bg-gray-400 dark:bg-slate-700 w-full"
+							widths={[400, 768]}
+							sizes=" (max-width: 767px) 400px, 768px"
+							alt="Hero Image"
+							aspectRatio="16:9"
+						/>
+					</div>
+					<div class="w-full lg:w-1/2 px-0 sm:px-8">
+						<div class="mb-12 lg:mb-0 pb-12 lg:pb-0 border-b lg:border-b-0">
+							<h2 class="mb-4 text-3xl lg:text-4xl font-bold font-heading" data-aos="fade-left">
+								Color Switch
+							</h2>
+
+							<p class="mb-8 text-xl text-gray-600 dark:text-slate-400" data-aos="fade-left" data-aos-delay="100">
+								A replica of the infamous Color Switch created by Fortafy Games, which I developed from scratch. 
+								This is a tap-based obstacle game involving meticulous obstacle movement 
+								designed with concepts such as Quadratic Bezier Curves. 
+								APK is available <a class="underline" href="https://drive.google.com/file/d/1Dg4EiPIguPQ9yJDDhP2cgfACz9fH-1zv/view?usp=sharing">here</a>.
+							</p>
+
+							<div class="w-full" data-aos="fade-left" data-aos-delay="100">
+								<a
+									class="btn text-white bg-[#c026d3] hover:bg-[#db2777] mb-4 sm:mb-0"
+									href="https://github.com/CoderRudh/Color-Switch/"
+									target="_blank"
+									rel="noopener"
+								>
+									<Icon name="tabler:arrow-up-right" class="w-5 h-5 mr-1 -ml-1.5" /> Source Code
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<br><br><br>
+				<div class="flex flex-wrap md:-mx-8">
+					<div class="w-full lg:w-1/2 px-0 sm:px-8">
+						<div class="mb-12 lg:mb-0 pb-12 lg:pb-0 border-b lg:border-b-0">
+							<h2 class="mb-4 text-3xl lg:text-4xl font-bold font-heading" data-aos="fade-right">
+								ASMR Movie Recommender
+							</h2>
+
+							<p class="mb-8 text-xl text-gray-600 dark:text-slate-400" data-aos="fade-right" data-aos-delay="100">
+								Final year engineering project developed by myself and friends. React based application which recommends movies using 
+								a Behavioral Sequence Transformer. 
+							</p>
+
+							<div class="w-full" data-aos="fade-right" data-aos-delay="200">
+								<a
+									class="btn text-white bg-[#c026d3] hover:bg-[#db2777] mb-4 sm:mb-0"
+									href="https://asmr.onrender.com/"
+									target="_blank"
+									rel="noopener"
+								>
+									<Icon name="tabler:arrow-up-right" class="w-5 h-5 mr-1 -ml-1.5" /> Visit Website
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="w-full lg:w-1/2 px-0 sm:px-8" data-aos="fade-left">
+						<Picture
+							src={import('~/assets/images/asmrr.jpg')}
+							class="mx-auto rounded-md shadow-lg bg-gray-400 dark:bg-slate-700 w-full"
+							widths={[400, 768]}
+							sizes=" (max-width: 767px) 400px, 768px"
+							alt="Hero Image"
+							aspectRatio="16:9"
+						/>
 					</div>
 				</div>
 			</div>

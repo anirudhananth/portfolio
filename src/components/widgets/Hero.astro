@@ -4,46 +4,63 @@ import Picture from '~/components/core/Picture.astro';
 ---
 
 <section>
-	<div class="max-w-6xl mx-auto px-4 sm:px-6">
+	<script>
+	AOS.init();
+	</script>
+	<div class="max-w-6xl mx-auto px-4 sm:px-6 h-screen">
 		<div class="py-12 md:py-20">
 			<div class="text-center pb-10 md:pb-16">
-				<h1 class="text-5xl md:text-[3.50rem] font-bold leading-tighter tracking-tighter mb-4 font-heading">
-					Your website with
-					<span class="bg-clip-text text-transparent bg-gradient-to-r from-primary-500 to-secondary-500">Astro</span> +
-					<span
-						class="bg-clip-text text-transparent bg-gradient-to-r from-primary-500 to-secondary-500 sm:whitespace-nowrap"
-						>Tailwind CSS</span
-					>
+				<h1 class="text-5xl md:text-[3.50rem] font-bold leading-tighter tracking-tighter mb-4 font-heading" data-aos="fade-down">
+					<span class="bg-clip-text text-transparent bg-gradient-to-r from-primary-500 to-secondary-500">Welcome to my Portfolio.</span>
 				</h1>
 				<div class="max-w-3xl mx-auto">
-					<p class="text-xl text-gray-600 mb-8 dark:text-slate-400">
-						AstroWind is a production ready template to start your new website using Astro + Tailwind CSS. It has been
-						designed following Best Practices, SEO, Accessibility, <span class="inline sm:hidden">...</span><span
-							class="hidden sm:inline"
-							>Dark Mode, Great Page Speed, image optimization, sitemap generation and more.</span
-						>
+					<p class="text-xl text-gray-600 mb-8 dark:text-slate-400" data-aos="fade-down" data-aos-delay="100">
+						Hi, my name is Anirudh Ananthasubramaniam.<br> I'm currently a Full-Stack Developer at 
+						<a class="bg-clip-text text-transparent bg-gradient-to-r from-primary-500 to-secondary-500" href="https://hiringtek.com/" target="_blank">HiringTek</a>. 
 					</p>
-					<div class="max-w-none px-6 flex flex-nowrap flex-col sm:flex-row sm:justify-center gap-4">
+					<div class="max-w-none px-6 flex flex-nowrap flex-col sm:flex-row sm:justify-center gap-4" data-aos="fade-down" data-aos-delay="200">
+						
 						<div class="flex w-full sm:w-auto">
 							<a
-								class="btn text-white border border-primary-600 bg-primary-600 hover:bg-primary-800 hover:border-primary-800 sm:mb-0 w-full"
+								class="btn text-white bg-gray-900 hover:bg-gray-700 dark:bg-gray-700 dark:hover:bg-gray-800 w-full hover:-translate-y-1"
+								href="#about">About Me</a
+							>
+						</div>
+						<div class="flex w-full sm:w-auto">
+							<a
+								class="btn text-white bg-gray-900 hover:bg-gray-700 dark:bg-gray-700 dark:hover:bg-gray-800 w-full hover:-translate-y-1"
+								href="#projects">Projects</a
+							>
+						</div>
+						<div class="flex w-full sm:w-auto">
+							<a
+								class="btn text-white bg-gray-900 hover:bg-gray-700 dark:bg-gray-700 dark:hover:bg-gray-800 w-full hover:-translate-y-1"
+								href="#experience">Experience</a
+							>
+						</div>
+						<div class="flex w-full sm:w-auto">
+							<a
+								class="btn text-white bg-gray-900 hover:bg-gray-700 dark:bg-gray-700 dark:hover:bg-gray-800 w-full hover:-translate-y-1"
+								href="#contact">Contact</a
+							>
+						</div>
+					</div>
+					<br><br>
+					<div class="max-w-none px-6 flex flex-nowrap flex-col sm:flex-row sm:justify-center gap-4" data-aos="fade-down" data-aos-delay="300">
+						<div class="flex w-full sm:w-auto">
+							<a
+								class="btn text-white border border-[#c026d3] bg-[#c026d3] hover:bg-[#db2777] hover:border-[#db2777] sm:mb-0 w-full hover:-translate-y-1"
 								href="https://github.com/onwidget/astrowind"
 								target="_blank"
 								rel="noopener"
 							>
-								<Icon name="tabler:download" class="w-5 h-5 mr-1 -ml-1.5" /> Get template
+								<Icon name="tabler:cloud-download" class="w-5 h-5 mr-1 -ml-1.5" /> Resume
 							</a>
-						</div>
-						<div class="flex w-full sm:w-auto">
-							<a
-								class="btn text-white bg-gray-900 hover:bg-gray-700 dark:bg-gray-700 dark:hover:bg-gray-800 w-full"
-								href="#features">Learn more</a
-							>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div>
+			<div style="display: none">
 				<div class="relative mb-8 m-auto max-w-3xl">
 					<Picture
 						src={import('~/assets/images/hero.jpg')}
