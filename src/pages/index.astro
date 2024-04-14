@@ -3,15 +3,15 @@ import { SITE } from '~/config.mjs';
 import { getCanonical, getHomePermalink } from '~/utils/permalinks';
 import Layout from '~/layouts/PageLayout.astro';
 
-import Hero from '~/components/widgets/Hero.astro';
-import Features from '~/components/widgets/Features.astro';
-import Features2 from '~/components/widgets/Features2.astro';
+import Main from '~/components/widgets/Main.astro';
+import About from '~/components/widgets/About.astro';
+import Experience from '~/components/widgets/Experience.astro';
 import Steps from '~/components/widgets/Steps.astro';
-import Features3 from '~/components/widgets/Features3.astro';
+import Projects from '~/components/widgets/Projects.astro';
 import HighlightedPosts from '~/components/blog/HighlightedPosts.astro';
 import FAQs from '~/components/widgets/FAQs.astro';
 import Stats from '~/components/widgets/Stats.astro';
-import CallToAction from '~/components/widgets/CallToAction.astro';
+import Contact from '~/components/widgets/Contact.astro';
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
 
@@ -25,13 +25,13 @@ const meta = {
 <Layout {meta}>
 	<script is:inline src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 	<script>AOS.init({once:true});</script>
-	<Hero />
-	<Features />
-	<Steps />
-	<Features3 />
-	<Features2 />
+	<Main />
+	<About />
+	<!-- <Steps /> -->
+	<Projects />
+	<Experience />
 	<!-- <HighlightedPosts /> -->
 	<!-- <FAQs /> -->
 	<!-- <Stats /> -->
-	<CallToAction />
+	<Contact />
 </Layout>
